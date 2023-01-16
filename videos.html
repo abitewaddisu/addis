@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="icon" type="image/icon" href="./images/addis-entertainment-hub-website-favicon-color.png">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/common-style.css">
+    <link rel="stylesheet" href="./styles/videos-style.css">
+</head>
+<body>
+    <header class="header-bg" >
+        <div class="logo_container">
+            <img class="logo__image" src="./images/addis-entertainment-hub-high-resolution-logo-color-on-transparent-background.png" alt="Addis entertainment Logo" width="100px">
+            <h1 class="logo__text">Addis Entertainment Hub</h1>
+        </div>
+        <hr>
+        <nav class="nav_container">
+            <img class="nav__icon menu-icon" onclick="displayLinks()" src="./images/White-Menu-icon.png" alt="menu icon" width="25px" title="MENU">
+            <div class="nav__links-container" id="nav_links-content">
+                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./videos.html#movies">Movies</a>
+                <a class="nav__link" href="./videos.html#comedies">Comedies</a>
+                <a class="nav__link" href="./videos.html#musics">Musics</a>
+                <a class="nav__link" href="./videos.html#shorts">Shorts</a>
+                <a class="nav__link" href="./add_contents_page.html">Add contents</a>
+            </div>
+            <label class="nav__label"  for="search">|</label>
+            <input class="nav__input"  type="text" id="search" placeholder="search...">
+            <img class="nav__icon clear-icon" onclick="restoreNavBar()" src="./images/white-x-cross-mark-icon.png" alt="clear icon" width="25px" title="CLEAR">
+            <img class="nav__icon search-icon" onclick="displaySearchBar()" src="./images/search-icon-clip-art.png" alt="search icon" width="25px" title="SEARCH">
+            <img class="nav__icon help-icon" onclick="displayHelp()" src="./images/cute_ball_help.png" alt="Help icon" width="25px" title="HELP">
+        </nav>
+    </header>
+
+    <div class="mobile_nav" id="mobile_nav"></div>
+    <div class="help_screen" id="help_screen"></div>
+    <div class="bg-blur" onclick="hideHelp()"></div>
+
+
+    <hr>
+
+    <div class="recent_videos_container">
+        <h2>Recent Videos</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.mp4" type="video/mp4">
+                    <track src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ገምዛ አዲስ ፊልም</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.mp4" type="video/mp4">
+                    <track src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">የሸዋፈራሁ ድንቅ ትወና</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/Afro Circus Remix - MADAGASCAR 3.mp4" type="video/mp4">
+                    <track src="./videos/music/Afro Circus Remix - MADAGASCAR 3.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+                <p class="title">Afro Circus Remix</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/funny video its 15 seconds.mp4" type="video/mp4">
+                    <track src="./videos/shorts/funny video its 15 seconds.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Drink Pepsi😂😂😂</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="movies_container" id="movies">
+        <h2>Movies</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/IRONMAN_4-FIRST_LOOK_TRAILER.mp4" type="video/mp4">
+                    <track src="./videos/movies/IRONMAN_4-FIRST_LOOK_TRAILER.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Ironman 4 first look</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/Lambadina - Official Trailer [HD] - Ethiopian Movie.mp4" type="video/mp4">
+                    <track src="./videos/movies/Lambadina - Official Trailer [HD] - Ethiopian Movie.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ላምባዲና፡ ግሩም ፊልም</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/Pathaan - Official Teaser - Shah Rukh Khan.mp4" type="video/mp4">
+                    <track src="./videos/movies/Pathaan - Official Teaser - Shah Rukh Khan.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Pathaan</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.mp4" type="video/mp4">
+                    <track src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ገምዛ አዲስ ፊልም</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="comedies_container" id="comedies">
+        <h2>Comedies</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/Ethiopian Animation Comedy -ተማሪው እና አስተማሪው- Funny Video in Amharic😂.mp4" type="video/mp4">
+                    <track src="./videos/comdies/Ethiopian Animation Comedy -ተማሪው እና አስተማሪው- Funny Video in Amharic😂.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ተማሪው እና አስተማሪው</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.mp4" type="video/mp4">
+                    <track src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">የሸዋፈራሁ ድንቅ ትወና</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/😂Ethiopian short funny carton film HD _አጭር አስቂኝ ፊልም በአማርኛ የቀረበ-ደደቡ ተማሪ --2013 _kok tube.mp4" type="video/mp4">
+                    <track src="./videos/comdies/😂Ethiopian short funny carton film HD _አጭር አስቂኝ ፊልም በአማርኛ የቀረበ-ደደቡ ተማሪ --2013 _kok tube.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ደደቡ ተማሪ</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/😂አቤ እና ከቤ -ገዛህልኝ-አጭር አንሜሽን ቪዲዮ--Ethiopian funny animation video abe and kebe.mp4" type="video/mp4">
+                    <track src="./videos/comdies/😂አቤ እና ከቤ -ገዛህልኝ-አጭር አንሜሽን ቪዲዮ--Ethiopian funny animation video abe and kebe.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ገዛህልኝ</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="musics_video_container" id="musics">
+        <h2>Musics</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/Afro Circus Remix - MADAGASCAR 3.mp4" type="video/mp4">
+                    <track src="./videos/music/Afro Circus Remix - MADAGASCAR 3.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+                <p class="title">Afro Circus Remix</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/Dick Van Dyke - Chim Chim Cher-ee  1,12 min.mp4" type="video/mp4">
+                    <track src="./videos/music/Dick Van Dyke - Chim Chim Cher-ee  1,12 min.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Chim Chim Cher-ee</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/DJ Kingston -Wez Wez Addis-   - Happy Birthday song.mp4" type="video/mp4">
+                    <track src="./videos/music/DJ Kingston -Wez Wez Addis-   - Happy Birthday song.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Happy Birthday</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/Funny!!! Lion King Song!!! ( The lion sleeps tonight).mp4" type="video/mp4">
+                    <track src="./videos/music/Funny!!! Lion King Song!!! ( The lion sleeps tonight).vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">The lion sleeps tonight</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="shorts_container" id="shorts">
+        <h2>Shorts</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/funny Hashtag Videos on TikTok_6.mp4" type="video/mp4">
+                    <track src="./videos/shorts/funny Hashtag Videos on TikTok_6.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">me....w</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/funny Hashtag Videos on TikTok_8.mp4" type="video/mp4">
+                    <track src="./videos/shorts/funny Hashtag Videos on TikTok_8.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ወይ መብራት</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/Find 'funny' on TikTok - TikTok Search_2.mp4" type="video/mp4">
+                    <track src="./videos/shorts/Find 'funny' on TikTok - TikTok Search_2.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">weeee...w</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/funny video its 15 seconds.mp4" type="video/mp4">
+                    <track src="./videos/shorts/funny video its 15 seconds.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Drink Pepsi😂😂😂</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="quick_links">
+        <h2>Quick links</h2>
+        <ul  class="quick_links__container">
+            <li class="quick_links__mainLink">
+                <a href="./videos.html">Videos</a>
+                <ul>
+                    <li>
+                        <a href="./videos.html#movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#comedies">Comedies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#shorts">Shorts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./audios.html">Audios</a>
+                <ul>
+                    <li>
+                        <a href="./audios.html#audiobooks">Audiobooks</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#podcasts">Podcasts</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#classicals">Classicals</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./images.html">Images</a>
+                <ul>
+                    <li>
+                        <a href="./images.html#funny">Funny Images</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#memes">Memes</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#amazing">Amazing Facts</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer_info">
+            <a href="./contact_us.html">Contact us</a>
+        </div>
+        <div class="footer_info">
+            &#169; Addis Entertainment Hub 2022. All Rights Reserved.
+        </div>
+        <div class="footer_info">
+            <a href="./about_us.html">About us</a>
+        </div>
+    </footer>
+
+    <script src="./javascript/videos.js"></script>
+    <script src="./javascript/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.contacts_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 1rem auto;
+}
+
+.gmap_iframe{
+    width: 100%;
+    max-height: 25rem;
+    max-width: 50rem;
+}

@@ -1,0 +1,9 @@
+.images_list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.images_list-container img{
+    margin: 1rem;
+}

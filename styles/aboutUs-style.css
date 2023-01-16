@@ -1,0 +1,45 @@
+.article-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    text-align: center;
+}
+
+.article-body__text-main{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:gold;
+    max-width: 700px;
+    margin: 1rem;
+}
+
+.teamMembers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    margin: 1rem;
+}
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.vision p{
+    /* width: 100%; */
+    max-width: 800px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}

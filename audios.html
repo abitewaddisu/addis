@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+    <link rel="icon" type="image/icon" href="./images/addis-entertainment-hub-website-favicon-color.png">
+    <link rel="stylesheet" href="./styles/common-style.css">
+    <link rel="stylesheet" href="./styles/audios-style.css">
+</head>
+<body>
+    <header class="header-bg">
+        <div class="logo_container">
+            <img class="logo__image" src="./images/addis-entertainment-hub-high-resolution-logo-color-on-transparent-background.png" alt="Addis entertainment Logo" width="100px">
+            <h1 class="logo__text">Addis Entertainment Hub</h1>
+        </div>
+        <hr>
+        <nav class="nav_container">
+            <img class="nav__icon menu-icon" onclick="displayLinks()" src="./images/White-Menu-icon.png" alt="menu icon" width="25px" title="MENU">
+            <div class="nav__links-container" id="nav_links-content">
+                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./audios.html#audiobooks">Audio books</a>
+                <a class="nav__link" href="./audios.html#musics">Musics</a>
+                <a class="nav__link" href="./audios.html#podcasts">Podcasts</a>
+                <a class="nav__link" href="./audios.html#classicals">Classicals</a>
+                <a class="nav__link" href="./add_contents_page.html">Add contents</a>
+            </div>
+            <label class="nav__label" for="search">|</label>
+            <input class="nav__input" type="text" id="search" placeholder="search...">
+            <img class="nav__icon clear-icon" onclick="restoreNavBar()" src="./images/white-x-cross-mark-icon.png" alt="clear icon" width="25px" title="CLEAR">
+            <img class="nav__icon search-icon" onclick="displaySearchBar()" src="./images/search-icon-clip-art.png" alt="search icon" width="25px" title="SEARCH">
+            <img class="nav__icon help-icon" onclick="displayHelp()" src="./images/cute_ball_help.png" alt="Help icon" width="25px" title="HELP">
+        </nav>
+    </header>
+    
+    <div class="mobile_nav" id="mobile_nav"></div>
+    <div class="help_screen" id="help_screen"></div>
+    <div class="bg-blur" onclick="hideHelp()"></div>
+
+    <hr>
+
+    <div class="recent_audios_container">
+        <h2>Recent Audios</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/ECHO audiobook - 1 minute sample.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ECHO audiobook</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/Classical Ethiopian Flute.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">Ethiopian Flute</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/IMG_1131.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ውሃው፡ ሮፍናን</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20210727-Obvs.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: obvs</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="audiobooks_container" id="audiobooks">
+        <h2>Audio Books</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/ECHO audiobook - 1 minute sample.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ECHO audiobook</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/FREEDOM audiobook - 1 minute sample.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">FREEDOM audiobook</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/One Minute Manager Book Summary.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">One Minute Manager</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/'Thirst' 1 Minute Audiobook Sample - Listen on Audible.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">Thirst</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="musics_audio_container" id="musics">
+        <h2>Musics</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/17e0a0533454732a6db9c9befa32d852.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">አንቺ የህመሜ ሃኪም</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/1d8d663a928df0ab8a174017a98090f2.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">እንዴት እንዴት ነሽ</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/7bea0d48bcc28d082f67a4ab6da5e07b.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ከልቧ ሰው ተቀይማ፡ ቴዲ አፍሮ</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/IMG_1131.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ውሃው፡ ሮፍናን</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="podcasts_container" id="podcasts">
+        <h2>Podcasts</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20210727-Obvs.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: obvs</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20210817-Bigwig.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: bigwig</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20220104-SayNoMore.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: Say No More</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20220118-AsSickAsAParrot.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: As Sick As A Parrot</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="classicals_container" id="classicals">
+        <h2>Classicals</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/10 Classical Music in 1 minute.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">10 Classicals in 1</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/15 Classical Music in 1 minute_2.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">15 Classicals in 1</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/Classical Ethiopian Flute.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">Ethiopian Flute</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/1 Minute Countdown Timer with Music - Dog Dancing Timer.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">Countdown Timer</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="quick_links">
+        <h2>Quick links</h2>
+        <ul class="quick_links__container">
+            <li class="quick_links__mainLink">
+                <a href="./videos.html">Videos</a>
+                <ul>
+                    <li>
+                        <a href="./videos.html#movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#comedies">Comedies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#shorts">Shorts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./audios.html">Audios</a>
+                <ul>
+                    <li>
+                        <a href="./audios.html#audiobooks">Audiobooks</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#podcasts">Podcasts</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#classicals">Classicals</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./images.html">Images</a>
+                <ul>
+                    <li>
+                        <a href="./images.html#funny">Funny Images</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#memes">Memes</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#amazing">Amazing Facts</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer_info">
+            <a href="./contact_us.html">Contact us</a>
+        </div>
+        <div class="footer_info">
+            &#169; Addis Entertainment Hub 2022. All Rights Reserved.
+        </div>
+        <div class="footer_info">
+            <a href="./about_us.html">About us</a>
+        </div>
+    </footer>
+
+    <script src="./javascript/audios.js"></script>
+    <script src="./javascript/common.js"></script>
+</body>
+</html>

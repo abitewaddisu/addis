@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="icon" type="image/icon" href="./images/addis-entertainment-hub-website-favicon-color.png">
+    <link rel="stylesheet" href="styles/common-style.css">
+    <link rel="stylesheet" href="styles/home-style.css">
+</head>
+<body>
+    <header class="header-bg">
+        <div class="logo_container">
+            <img class="logo__image" src="./images/addis-entertainment-hub-high-resolution-logo-color-on-transparent-background.png" alt="Addis entertainment Logo" width="100px">
+            <h1 class="logo__text">Addis Entertainment Hub</h1>
+        </div>
+        <hr>
+        <nav class="nav_container">
+            <img class="nav__icon menu-icon" onclick="displayLinks()" src="./images/White-Menu-icon.png" alt="menu icon" width="25px" title="MENU">
+            <div class="nav__links-container" id="nav_links-content">
+                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./videos.html">Videos</a>
+                <a class="nav__link" href="./audios.html">Audios</a>
+                <a class="nav__link" href="./images.html">Images</a>
+                <a class="nav__link" href="./add_contents_page.html">Add contents</a>
+            </div>
+            <label class="nav__label" for="search">|</label>
+            <input class="nav__input" type="text" id="search" placeholder="search...">
+            <img class="nav__icon search-icon" onclick="displaySearchBar()" src="./images/search-icon-clip-art.png" alt="search icon" width="25px" title="SEARCH">
+            <img class="nav__icon help-icon" onclick="displayHelp()" src="./images/cute_ball_help.png" alt="Help icon" width="25px" title="HELP">
+            <img class="nav__icon clear-icon" onclick="restoreNavBar()" src="./images/white-x-cross-mark-icon.png" alt="clear icon" width="25px" title="CLEAR">
+        </nav>
+    </header>
+
+    <div class="mobile_nav" id="mobile_nav"></div>
+    <div class="help_screen" id="help_screen"></div>
+    <div class="bg-blur" onclick="hideHelp()"></div>
+
+    <hr>
+
+    <article class="desc_container">
+        <div class="desc__image">
+            <img class="desc__img" src="./images/laugh.jpg" alt="Fun Image icons" width="300" height="200">
+        </div>
+        <div class="desc__text">
+            <p>
+                Entertainment is what makes you happy and feel relaxed. It’s your gateway from day to day life. <br>
+                We live in a world that needs entertainment. And that entertainment has to be provided by men who sweat and bleed. <br>
+                Live and work but do not forget to play, to have fun in life and really enjoy it.
+            </p>
+        </div>
+    </article>
+
+    <hr>
+
+    <div class="videos_container" id="videos">
+        <h2>Recent Videos</h2>
+        <hr>
+        <div class="videos_list-container">
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.mp4" type="video/mp4">
+                    <track src="./videos/movies/ገምዛ ፊልም GEMZA  the best upcoming movies 2022.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">ገምዛ አዲስ ፊልም</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.mp4" type="video/mp4">
+                    <track src="./videos/comdies/Find 'amharic comedy' on TikTok - TikTok Search.vtt" kind="subtitles" srclang="amharic" label="amharic">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">የሸዋፈራሁ ድንቅ ትወና</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/music/Afro Circus Remix - MADAGASCAR 3.mp4" type="video/mp4">
+                    <track src="./videos/music/Afro Circus Remix - MADAGASCAR 3.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+                <p class="title">Afro Circus Remix</p>
+            </div>
+            <div class="video_container">
+                <video  width="300px" height="200px"  controls>
+                    <source src="./videos/shorts/funny video its 15 seconds.mp4" type="video/mp4">
+                    <track src="./videos/shorts/funny video its 15 seconds.vtt" kind="subtitles" srclang="en" label="English">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="title">Drink Pepsi😂😂😂</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="audios_container" id="audios">
+        <h2>Audios</h2>
+        <hr>
+        <div class="audios_list-container">
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/audiobooks/ECHO audiobook - 1 minute sample.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ECHO audiobook</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/classicals/Classical Ethiopian Flute.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">Ethiopian Flute</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/musics/IMG_1131.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">ውሃው፡ ሮፍናን</p>
+            </div>
+            <div class="audio_container">
+                <audio controls>
+                    <source src="./audios/podcasts/TheEnglishWeSpeak-20210727-Obvs.mp3" type="audio/mp3">
+                </audio>
+                <p class="title">BBC learning: obvs</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="images_container" id="images">
+        <h2>Images</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/Amazing-facts/corenew.jpg" alt="Cornea no blood " height="300px" width="400px">
+            <img class="image" src="./images/funny_images/photo_2022-12-25_16-22-45.jpg" alt="canon model candel" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-03_05-08-45.jpg" alt="google trust" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="quick_links">
+        <h2>Quick links</h2>
+        <ul class="quick_links__container">
+            <li class="quick_links__mainLink">
+                <a href="./videos.html">Videos</a>
+                <ul>
+                    <li>
+                        <a href="./videos.html#movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#comedies">Comedies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#shorts">Shorts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./audios.html">Audios</a>
+                <ul>
+                    <li>
+                        <a href="./audios.html#audiobooks">Audiobooks</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#podcasts">Podcasts</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#classicals">Classicals</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./images.html">Images</a>
+                <ul>
+                    <li>
+                        <a href="./images.html#funny">Funny Images</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#memes">Memes</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#amazing">Amazing Facts</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer_info">
+            <a href="./contact_us.html">Contact us</a>
+        </div>
+        <div class="footer_info">
+            &#169; Addis Entertainment Hub 2022. All Rights Reserved.
+        </div>
+        <div class="footer_info">
+            <a href="./about_us.html">About us</a>
+        </div>
+    </footer>
+
+    <script src="./javascript/home.js"></script>
+    <script src="./javascript/common.js"></script>
+</body>
+</html>

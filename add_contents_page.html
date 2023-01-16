@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add contents</title>
+    <link rel="icon" type="image/icon" href="./images/addis-entertainment-hub-website-favicon-color.png">
+    <link rel="stylesheet" href="./styles/common-style.css">
+    <link rel="stylesheet" href="./styles/add_contents.css">
+</head>
+<body>
+    <header>
+        <header class="header-bg">
+            <div class="logo_container">
+                <img class="logo__image" src="./images/addis-entertainment-hub-high-resolution-logo-color-on-transparent-background.png" alt="Addis entertainment Logo" width="100px">
+                <h1 class="logo__text">Addis Entertainment Hub</h1>
+            </div>
+    </header>
+    
+    <hr>
+
+    <div class="form_container">
+        <form>
+            <div class="media_type">
+                <label class="form_label" for="media_type">Media type: </label>
+                <select class="select_container" name="type" id="media">
+                    <option name="type" value="">select...</option>
+                    <option name="type" value="Video">Video</option>
+                    <option name="type" value="Video">Audio</option>
+                    <option name="type" value="Image">Image</option>
+                </select>
+            </div>
+    
+            <div class="category">
+                <label class="form_label" for="catagory">Category: </label>
+                <select class="select_container" name="Category" id="category">
+                    <option value="">select...</option>
+                </select>
+            </div>
+    
+            <br>
+    
+            <label class="form_label file_label" for="filedir">File:</label>
+            <input class='input_field' type="text" placeholder="select file..." id="file">
+            <button id="add-btn">Add</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <table id="table" >
+        <tr>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <td>corenew.jpg</td>
+            <td>Image</td>
+            <td>Amazing fact</td>
+            <td>12/26/2022 11:31 AM</td>
+            <td>17.4 KB</td>
+        </tr>
+        <tr>
+            <td>photo_2022-12-25_16-22-45.jpg</td>
+            <td>Image</td>
+            <td>Funny image</td>
+            <td>12/26/2022 11:34 AM</td>
+            <td>21.0 KB</td>
+        </tr>
+        <tr>
+            <td>photo_2022-12-03_05-08-45.jpg</td>
+            <td>Image</td>
+            <td>Meme</td>
+            <td>12/26/2022 11:35 AM</td>
+            <td>78.5 KB</td>
+        </tr>
+        <tr>
+            <td>ECHO audiobook - 1 minute sample.mp3</td>
+            <td>Audio</td>
+            <td>Audiobook</td>
+            <td>12/26/2022 11:37 AM</td>
+            <td>903 KB</td>
+        </tr>
+        <tr>
+            <td>Classical Ethiopian Flute.mp3</td>
+            <td>Audio</td>
+            <td>Classical</td>
+            <td>12/26/2022 11:38 AM</td>
+            <td>903 KB</td>
+        </tr>
+        <tr>
+            <td>IMG_1131.mp3</td>
+            <td>Audio</td>
+            <td>Music</td>
+            <td>12/26/2022 11:39 AM</td>
+            <td>273 KB</td>
+        </tr>
+        <tr>
+            <td>TheEnglishWeSpeak-20210727-Obvs.mp3</td>
+            <td>Audio</td>
+            <td>Podcast</td>
+            <td>12/26/2022 11:40 AM</td>
+            <td>834 KB</td>
+        </tr>
+        <tr>
+            <td>Find 'amharic comedy' on TikTok - TikTok Search.mp4</td>
+            <td>Video</td>
+            <td>comedies</td>
+            <td>12/27/2022 05:01 AM</td>
+            <td>3.0 MB</td>
+        </tr>
+        <tr>
+            <td>ገምዛ ፊልም GEMZA  the best upcoming movies 2022.mp4</td>
+            <td>Video</td>
+            <td>Movies</td>
+            <td>12/27/2022 05:05 AM</td>
+            <td>2.25 MB</td>
+        </tr>
+        <tr>
+            <td>Afro Circus Remix - MADAGASCAR 3.mp4</td>
+            <td>Video</td>
+            <td>Musics</td>
+            <td>12/27/2022 05:07 AM</td>
+            <td>1.64 MB</td>
+        </tr>
+        <tr>
+            <td>funny video its 15 seconds.mp4</td>
+            <td>Video</td>
+            <td>Shorts</td>
+            <td>12/27/2022 05:08 AM</td>
+            <td>326 KB</td>
+        </tr>
+    </table>
+
+    <button><a href="./index.html">Back to home</a></button>
+
+    <script src="./javascript/add_content.js"></script>
+</body>
+</html>

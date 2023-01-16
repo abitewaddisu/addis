@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="icon" type="image/icon" href="./images/addis-entertainment-hub-website-favicon-color.png">
+    <link rel="stylesheet" href="styles/common-style.css">
+    <link rel="stylesheet" href="styles/images-style.css">
+</head>
+<body>
+    <header class="header-bg">
+        <div class="logo_container">
+            <img class="logo__image" src="./images/addis-entertainment-hub-high-resolution-logo-color-on-transparent-background.png" alt="Addis entertainment Logo" width="100px">
+            <h1 class="logo__text">Addis Entertainment Hub</h1>
+        </div>
+        <hr>
+        <nav class="nav_container">
+            <img class="nav__icon menu-icon" onclick="displayLinks()" src="./images/White-Menu-icon.png" alt="menu icon" width="25px" title="MENU">
+            <div class="nav__links-container" id="nav_links-content">
+                <a class="nav__link" href="./index.html">Home</a>
+                <a class="nav__link" href="./images.html#funny">Funny Images</a>
+                <a class="nav__link" href="./images.html#memes">Memes</a>
+                <a class="nav__link" href="./images.html#amazing">Amazing Facts</a>
+                <a class="nav__link" href="./add_contents_page.html">Add contents</a>
+            </div>
+            <label class="nav__label" for="search">|</label>
+            <input class="nav__input" type="text" id="search" placeholder="search...">
+            <img class="nav__icon clear-icon" onclick="restoreNavBar()" src="./images/white-x-cross-mark-icon.png" alt="clear icon" width="25px" title="CLEAR">
+            <img class="nav__icon search-icon" onclick="displaySearchBar()" src="./images/search-icon-clip-art.png" alt="search icon" width="25px" title="SEARCH">
+            <img class="nav__icon help-icon" onclick="displayHelp()" src="./images/cute_ball_help.png" alt="Help icon" width="25px" title="HELP">
+        </nav>
+    </header>
+
+    <div class="mobile_nav" id="mobile_nav"></div>
+    <div class="help_screen" id="help_screen"></div>
+    <div class="bg-blur" onclick="hideHelp()"></div>
+
+    <hr>
+
+    <div class="recent_images_container">
+        <h2>Recent Images</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/Amazing-facts/corenew.jpg" alt="Cornea no blood " height="300px" width="400px">
+            <img class="image" src="./images/funny_images/photo_2022-12-25_16-22-45.jpg" alt="canon model candel" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-03_05-08-45.jpg" alt="google trust" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="most_popular_container">
+        <h2>Most popular</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/memes/photo_2022-12-25_16-02-22.jpg" alt="human hair" height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/photo_2022-12-25_16-25-25.jpg" alt="tech hack" height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/snail_teeth.jpg" alt="fun fact" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="funny_images_container" id="funny">
+        <h2>Funny Images</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/funny_images/dog_reading.jpg" alt="Dog reading" height="300px" width="400px">
+            <img class="image" src="./images/funny_images/monkey-sport.jpg" alt=" Monkey sport" height="300px" width="400px">
+            <img class="image" src="./images/funny_images/photo_2022-12-25_16-17-21.jpg" alt="Wood camera man" height="300px" width="400px">
+            <img class="image" src="./images/funny_images/photo_2022-12-25_16-22-26.jpg" alt="Shoes shape leaves" height="300px" width="400px">
+            <img class="image" src="./images/funny_images/photo_2022-12-25_16-22-45.jpg" alt="canon model candel" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="memes_container" id="memes">
+        <h2>Memes</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/memes/photo_2022-12-02_08-02-44.jpg" alt="school meme" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-03_05-08-45.jpg" alt="google trust" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-25_16-02-22.jpg" alt="human hair" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-25_16-03-33.jpg" alt="trousers price" height="300px" width="400px">
+            <img class="image" src="./images/memes/photo_2022-12-25_16-19-59.jpg" alt="bill gate money" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="amazing_facts_container" id="amazing">
+        <h2>Amazing Facts</h2>
+        <hr>
+        <div class="images_list-container">
+            <img class="image" src="./images/Amazing-facts/corenew.jpg" alt="Cornea no blood " height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/illegal_die.jpg" alt="Illegal to die" height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/photo_2022-12-25_16-25-11.jpg" alt="city above the sky" height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/photo_2022-12-25_16-25-25.jpg" alt="tech hack" height="300px" width="400px">
+            <img class="image" src="./images/Amazing-facts/snail_teeth.jpg" alt="fun fact" height="300px" width="400px">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="quick_links">
+        <h2>Quick links</h2>
+        <ul class="quick_links__container">
+            <li class="quick_links__mainLink">
+                <a href="./videos.html">Videos</a>
+                <ul>
+                    <li>
+                        <a href="./videos.html#movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#comedies">Comedies</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./videos.html#shorts">Shorts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./audios.html">Audios</a>
+                <ul>
+                    <li>
+                        <a href="./audios.html#audiobooks">Audiobooks</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#musics">Musics</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#podcasts">Podcasts</a>
+                    </li>
+                    <li>
+                        <a href="./audios.html#classicals">Classicals</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="quick_links__mainLink">
+                <a href="./images.html">Images</a>
+                <ul>
+                    <li>
+                        <a href="./images.html#funny">Funny Images</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#memes">Memes</a>
+                    </li>
+                    <li>
+                        <a href="./images.html#amazing">Amazing Facts</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="footer_info">
+            <a href="./contact_us.html">Contact us</a>
+        </div>
+        <div class="footer_info">
+            &#169; Addis Entertainment Hub 2022. All Rights Reserved.
+        </div>
+        <div class="footer_info">
+            <a href="./about_us.html">About us</a>
+        </div>
+    </footer>
+
+    <script src="./javascript/images.js"></script>
+    <script src="./javascript/common.js"></script>
+</body>
+</html>

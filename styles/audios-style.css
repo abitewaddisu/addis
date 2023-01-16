@@ -1,0 +1,19 @@
+.audio_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem;
+}
+
+.title{
+    padding: 0.5rem 0;
+}
+
+.audios_list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
